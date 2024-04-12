@@ -20,7 +20,7 @@ export default function Model(props) {
   if (window.innerWidth > 768) {
     useFrame((state, delta) => {
       // The offset is between 0 and 1, you can apply it to your models any way you like
-      const offset = scroll.offset;
+      const offset = 1- scroll.offset;
       // Calculate the position of the camera
       const x = Math.sin(offset * Math.PI * 2) * -10;
       const z = Math.cos(offset * Math.PI * 2) * -10;
@@ -43,7 +43,7 @@ export default function Model(props) {
         enableZoom={false}
         enableDamping
         dampingFactor={0.5}
-        rotateSpeed={0.013}
+        rotateSpeed={0.13}
         mouseButtons={{ LEFT: 1, RIGHT: null, MIDDLE: null }}
       />
     </group>

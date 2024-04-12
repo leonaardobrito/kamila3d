@@ -1,7 +1,7 @@
 import React from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, ScrollControls } from "@react-three/drei";
-import Scene from "../public/Scene";
+import Scene from "./components/Scene";
 
 function App() {
   return (
